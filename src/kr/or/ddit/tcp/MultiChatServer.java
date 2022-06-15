@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class MultiChatServer {
-	// 대화명, 클라이트의 Socket을 저장하기 위한 Map변수 선언
+	// 대화명, 클라이언트의 Socket을 저장하기 위한 Map변수 선언
 	Map<String, Socket> clients;
 
 	public MultiChatServer() {
@@ -147,8 +147,9 @@ public class MultiChatServer {
 			}
 		}
 	}
+
 	public static void main(String[] args) {
 		new MultiChatServer().serverStart();
-		
+
 	}
 }
